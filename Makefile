@@ -7,6 +7,3 @@ run:
 
 stop:
 	docker-compose down
-
-data-import: 
-	node backend/seeder
