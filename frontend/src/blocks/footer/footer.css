@@ -1,0 +1,14 @@
+.footer {
+  background-color: #2a2c2f;
+  border-top: 1px solid rgba(255, 255, 255, 0.836);
+  width: 100%;
+}
+
+.footer__copyright {
+  margin: 8px 0;
+  color: rgb(255, 255, 255);
+}
+
+.footer__cont {
+  margin-left: 40px;
+}

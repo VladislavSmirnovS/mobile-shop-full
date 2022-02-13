@@ -1,0 +1,43 @@
+.cards {
+  margin-bottom: 10px;
+  display: grid;
+  gap: 20px 17px;
+  grid-template-columns: repeat(auto-fill, 290px);
+  justify-content: space-between;
+}
+
+.cards__item {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 15px 7px;
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(59, 59, 59, 0.836);
+}
+
+.cards__string {
+  margin-bottom: 7px;
+  max-width: 100%;
+}
+
+.cards__value {
+  margin-bottom: 7px;
+}
+
+.cards__text {
+  color: #000;
+  background-color: #ecedeede;
+  max-width: 95%;
+  height: 20px;
+  font-size: 14px;
+  padding: 5px 10px;
+  margin: 0;
+  margin-top: 5px;
+}
+
+.cards__title {
+  color: rgb(0, 0, 0);
+  margin: 0;
+  margin-bottom: 10px;
+}

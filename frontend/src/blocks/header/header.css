@@ -1,0 +1,18 @@
+.header {
+  padding: 15px;
+  margin: 0 0 20px;
+  display: flex;
+  background-color: #2a2c2f;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.836);
+  justify-content: center;
+}
+
+.header__logo {
+  height: 10vmin;
+  width: 100px;
+  filter: brightness(0) invert(1);
+}
+
+.header__title {
+  color: aliceblue;
+}

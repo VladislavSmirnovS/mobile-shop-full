@@ -1,0 +1,30 @@
+.menu {
+    position: relative;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.menu__item {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 25px;  
+}
+
+.menu__item:last-of-type {
+    margin-right: 0;
+}
+
+.menu__item_active {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 950px) {
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
