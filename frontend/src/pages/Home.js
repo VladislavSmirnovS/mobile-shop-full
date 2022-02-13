@@ -6,7 +6,7 @@ import Search from "../components/Search.js";
 const HomePage = () => {
   const [products, setProducts] = useState();
   const [query, setQeury] = useState("");
-  const [found, setfound] = useState(true);
+  const [found, setFound] = useState(true);
 
   function handleChange(newValue) {
     setQeury(newValue);
@@ -18,9 +18,9 @@ const HomePage = () => {
       .then((res) => {
         setProducts(res);
         if (res.length !== 0) {
-          setfound(false);
+          setFound(false);
         } else {
-          setfound(true);
+          setFound(true);
         }
       })
       .catch((err) => {
