@@ -6,7 +6,7 @@ import Search from "../components/Search.js";
 const HomePage = () => {
   const [products, setProducts] = useState();
   const [query, setQeury] = useState("");
-  const [load, setload] = useState(true);
+  const [found, setfound] = useState(true);
 
   function handleChange(newValue) {
     setQeury(newValue);
@@ -17,11 +17,15 @@ const HomePage = () => {
       .searchProducts(query)
       .then((res) => {
         setProducts(res);
+        if (res.length !== 0) {
+          setfound(false);
+        } else {
+          setfound(true);
+        }
       })
       .catch((err) => {
         console.log(err);
       });
-    setload(false);
   }, [query]);
 
   let renderItems;
@@ -35,8 +39,8 @@ const HomePage = () => {
   return (
     <>
       <Search onChange={handleChange} />
-      {load ? (
-        <p className="load">Загрузка...</p>
+      {found ? (
+        <p className="found">Ничего не найдено</p>
       ) : (
         <>
           <h1 className="cards__title">Список товаров:</h1>{" "}
