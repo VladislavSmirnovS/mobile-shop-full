@@ -22,16 +22,14 @@ const createProduct = (req, res, next) => {
 };
 
 const searchProduct = (req, res, next) => {
-  Product.find(
-    {
+  Product.find({
     $or: [
-      { "name": { $regex: req.query.search} },
-      { "description": { $regex: req.query.search} },
-      { "parameters.price": { $regex: req.query.search} },
-      { "parameters.equipment": { $regex: req.query.search} },
+      { name: { $regex: req.query.search } },
+      { description: { $regex: req.query.search } },
+      { "parameters.price": { $regex: req.query.search } },
+      { "parameters.equipment": { $regex: req.query.search } },
     ],
-  }
-  )
+  })
     .then((product) => {
       res.status(201).send(product);
     })
