@@ -1,6 +1,6 @@
 const {
   PORT = 3001,
-  DB_ADDRESS = 'mongodb://localhost:27017/mobile-shop',
+  DB_ADDRESS = 'mongodb://mongo:27017/mobile-shop',
 } = process.env;
 
 module.exports = {

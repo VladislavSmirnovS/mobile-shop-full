@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 mongoose.connect(DB_ADDRESS, {
   useNewUrlParser: true,
-        useUnifiedTopology: true,
+  useUnifiedTopology: true,
 });
 
 app.use(cors());
